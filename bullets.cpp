@@ -53,6 +53,7 @@ void bullet::update()
 		if (screenOverCheck(_vBullet[i].rc))
 		{
 			// ªË¡¶
+			delete _vBullet[i].ani;
 			_vBullet.erase(_vBullet.begin() + i);
 		}
 		else

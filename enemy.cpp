@@ -48,6 +48,7 @@ HRESULT enemy::init(string imageName, float x, float y, MyEnemyType enemyType)
 
 void enemy::release()
 {
+	delete _ani;
 }
 
 void enemy::update()

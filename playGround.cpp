@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "playGround.h"
 
+#define MAGENTA RGB(255, 0, 255)
 
 playGround::playGround()
 {
@@ -17,8 +18,8 @@ HRESULT playGround::init()
 	gameNode::init(true);
 
 	// 배경
-	IMAGEMANAGER->addImage("배경", "image/backSpace.bmp", WINSIZEX, WINSIZEY, false, RGB(255, 0, 255));
-	IMAGEMANAGER->addImage("검정", "image/검은 화면.bmp", WINSIZEX, WINSIZEY, false, RGB(255, 0, 255));
+	IMAGEMANAGER->addImage("배경", "image/backSpace.bmp", WINSIZEX, WINSIZEY, false, MAGENTA);
+	IMAGEMANAGER->addImage("검정", "image/검은 화면.bmp", WINSIZEX, WINSIZEY, false, MAGENTA);
 
 	// 오공 1단계
 	IMAGEMANAGER->addFrameImage("1단계 오공 기본", "image/goku/idle.bmp"			, 678, 111, 6, 1, true, RGB(255, 0, 255));
