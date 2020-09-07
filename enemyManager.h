@@ -37,7 +37,7 @@ public:
 	// 에너미 벡터 접근자
 	vector<enemy*> getEnemyVector()		{ return _vEnemy; }
 	// 에너미 삭제
-	void	enemyRemove(int arrNum)		{ _vEnemy.erase(_vEnemy.begin() + arrNum); }
+	void	enemyRemove(int arrNum)		{ _vEnemy[arrNum]->release(); _vEnemy.erase(_vEnemy.begin() + arrNum); }
 	// 
 	void	setBossPhase(bool phase)	{ _isBossPhase = phase; }
 	// 보스 렉트 접근자
