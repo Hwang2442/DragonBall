@@ -15,7 +15,7 @@ HRESULT gamePlay::init()
 	_player->init();
 
 	_em = new enemyManager;
-	_em->init(3, 4, 200, 15);
+	_em->init(1, 2, 1000, 20);
 
 	_itemM = new itemManager;
 	_itemM->init(10);

@@ -171,10 +171,6 @@ void playerBomb::render()
 			_bombFinal.img->render(getMemDC(), _bombFinal.rc.left, _bombFinal.rc.top);
 		}		
 	}	
-
-	char str[30];
-	sprintf_s(str, "Energy Blast Size : %d", _vBombMid.size());
-	TextOut(getMemDC(), 0, 300, str, strlen(str));
 }
 
 void playerBomb::bombFire(float x, float y)
